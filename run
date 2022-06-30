@@ -6,5 +6,5 @@ uvicorn main:app --reload
 http://localhost:8000/docs - swagger ui documentation
 http://localhost:8000/redoc - alternative api documentation 1
 
-pydentic model - schema
+pydentic model - schema (response model)
 sqlalchemy model - model

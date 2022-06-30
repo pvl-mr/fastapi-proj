@@ -57,3 +57,8 @@ def show(id, response: Response, db: Session = Depends(get_db)):
         # response.status_code = status.HTTP_404_NOT_FOUND
         # return {'detail': f"Blog {id} is not existing"}
     return blog
+
+@app.post('/user', status_code=status.HTTP_201_CREATED)
+def create_user(request: schemas.User, db: Session = Depends(get_db)):
+
+    return request
